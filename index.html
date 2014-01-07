@@ -1,1 +1,264 @@
-Hello World! -Kim-N
+<style type='text/css'>
+
+/*=== CSS RESET ====*/
+html, body, div, img, nav, main {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  line-height: 1;
+}
+
+a {
+ text-decoration: none; 
+}
+
+a:visited {
+  color:inherit;
+}
+/*=== UTILITIES ====*/
+.group:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.float-right{
+ float:right; 
+}
+
+.float-left{
+ float:left; 
+}
+
+.hidden {
+  display: none;
+}
+
+.selected {
+  background: #FF9840 !important;
+  color: #1D7074;
+}
+
+/*=== BODY ====*/
+
+
+body {
+  background: #FF9840;
+  font-family: courier;
+  color:#35D4A4;
+}
+
+main {
+  background: #207E62;
+  border-top: 0px;
+  width: 900px;
+  height: 600px;
+  margin: auto;
+}
+
+/*=== HEADER ====*/
+header {
+  background: #00A876;
+  border-left: 0px;
+  border-right: 0px;
+  font-size: 20px;
+  padding: 15px 0px 20px 0px;
+}
+.name_section {
+  width: 900px;
+  margin: auto;
+}
+
+.name_section > .float-right {
+  padding-top: 10px;
+}
+
+
+.name_section > #my_name {
+  display: inline;
+  font-size: 30px;
+  padding-left: 40px;
+}
+
+.name_section > #my_resume {
+  padding-right: 40px;
+}
+
+.name_section > #my_email {
+  margin: 0px 20px;
+}
+
+.name_section > #my_github {
+}
+
+/*=== DESCRIPTION ====*/
+.description_sections {
+  padding: 50px 40px;
+  font-size: 30px;
+}
+
+.description_sections > img{
+  width: 150px;
+}
+
+/*=== PROJECTS ====*/
+.projects_section {
+  background: #006D4C;
+  padding: 10px 0px;
+}
+
+.projects_section > a {
+/*  background: blue;*/
+  height: 230px;
+  width: 40px;
+}
+
+.projects_section > .prev {
+}
+
+.projects_section > .next {
+}
+
+.projects_section > nav.projects-navigation {
+}
+
+.projects-navigation {
+  font-size: 14px;
+  padding-bottom: 5px;
+}
+
+.projects-navigation .title {
+  display:inline;
+  padding: 0px 100px 0px 40px;
+  font-size: 20px;
+}
+.projects-navigation > a {
+  background: #BF7230;
+  padding: 8px 10px 6px 10px;
+  margin: 0px 20px;
+}
+
+a.project1 {
+}
+
+a.project2 {
+}
+
+a.project3 {
+}
+
+.project {
+  background: white;
+  padding: 20px 60px;
+}
+
+.project-image {
+  float: left;
+}
+
+.project-descriptions {
+  font-size: 20px;
+}
+
+
+
+</style>
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kim</title>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+  </script>
+
+
+</head>
+<body>
+  <header>
+    <div class="name_section group">
+      <div id="my_name">Kimberly Narine</div>
+      <div class="float-right" id="my_resume">Resume</div>
+      <div class="float-right" id="my_email">kimberlyonarine@gmail.com</div>
+      <div class="float-right" id="my_github">Github</div>
+    </div>
+  </header>
+  <main>
+    <div class="description_sections">
+      <img class="float-left" src="http://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Happy_smiley_face.png/600px-Happy_smiley_face.png">
+      I am a software developer located in Brookly, NY. I write software in Ruby, Javascript and C++. I graduated from Macaulay Honors College at Hunter College with a B.A. in Mathematics and Computer Science.
+    </div>
+    <div class="projects_section group">
+      <a class="prev float-left" href="#left"></a>
+      <a class="next float-right" href="#right"></a>
+      <nav class="projects-navigation">
+        <div class="title">Projects</div>
+        <a id="1" class="project1 selected" href="#1">Project1</a>
+        <a id="2" class="project2" href="#2">Project2</a>
+        <a id="3" class="project3" href="#3">Project3</a>
+      </nav>
+      <div class="project project1 selected">
+        <img class="project-image" src="http://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Happy_smiley_face.png/600px-Happy_smiley_face.png" width="100">
+        <div class="project-descriptions">1Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+      </div>
+      <div class="project project2 hidden">
+        <img class="project-image" src="http://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Happy_smiley_face.png/600px-Happy_smiley_face.png" width="100">
+        <div class="project-descriptions">2Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+      </div>
+      <div class="project project3 hidden">
+        <img class="project-image" src="http://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Happy_smiley_face.png/600px-Happy_smiley_face.png" width="100">
+        <div class="project-descriptions">3Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+      </div>
+    </div>
+  </main>
+  
+  
+</body>
+  
+</html>
+
+
+<script type='text/javascript'>
+
+  function changeCurrentSelection(clicked_object) {
+    $( ".project" ).addClass("hidden")
+    $( ".project" ).removeClass("selected")
+    $( ".projects-navigation a" ).removeClass("selected")
+    clicked_object.addClass("selected")
+    clicked_object.removeClass("hidden")
+  }
+
+   $( ".projects-navigation a" ).on("click", function( event ) {
+     var clicked_project = $("." + $(this)[0].className)
+     
+     changeCurrentSelection(clicked_project)
+   });
+   
+   $( ".projects_section > a.prev" ).on("click", function( event ) {
+     var current_project_id = $("a.selected")[0].id
+     var next_project_id = (parseInt(current_project_id) - 1)
+     next_project_id = next_project_id == 0 ?  3 : next_project_id
+     var prev_project = $(".project" + next_project_id);
+     
+     changeCurrentSelection(prev_project);
+   });
+   
+   
+   $( ".projects_section > a.next" ).on("click", function( event ) {
+     var current_project_id = $("a.selected")[0].id
+     var next_project_id = (parseInt(current_project_id) + 1)
+     next_project_id = next_project_id == 4 ?  1 : next_project_id
+     var next_project = $(".project" + next_project_id)
+     
+     changeCurrentSelection(next_project);
+   });
+   
+</script>
