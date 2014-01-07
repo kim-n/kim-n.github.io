@@ -43,8 +43,6 @@ a:visited {
 }
 
 /*=== BODY ====*/
-
-
 body {
   background: #FF9840;
   font-family: courier;
@@ -66,32 +64,29 @@ header {
   border-right: 0px;
   font-size: 20px;
   padding: 15px 0px 20px 0px;
-}
-.name_section {
-  width: 900px;
-  margin: auto;
+  
 }
 
-.name_section > .float-right {
+.header_nav {
+  width: 900px;
+  margin: auto;
   padding-top: 10px;
 }
 
+.header_nav > .float-right {
+  padding-left: 15px;
+}
 
-.name_section > #my_name {
+.header_nav > #my_email {
   display: inline;
-  font-size: 30px;
   padding-left: 40px;
 }
 
-.name_section > #my_resume {
+.header_nav > #my_resume {
   padding-right: 40px;
 }
 
-.name_section > #my_email {
-  margin: 0px 20px;
-}
-
-.name_section > #my_github {
+.header_nav > #my_github {
 }
 
 /*=== DESCRIPTION ====*/
@@ -102,6 +97,17 @@ header {
 
 .description_sections > img{
   width: 150px;
+  margin: 0px 10px 0px 0px;
+}
+
+.description_sections > #my_name {
+  margin-bottom: 40px;
+  margin-left: 300px;
+  margin-top: 20px;
+}
+
+.description_sections > #description {
+  
 }
 
 /*=== PROJECTS ====*/
