@@ -35,7 +35,7 @@ a:hover {
 }
 
 .float-left{
- float:left; 
+ float:left;  
 }
 
 .hidden {
@@ -55,16 +55,23 @@ body {
 }
 
 main {
+  background: -webkit-linear-gradient(#207E62, #006D4C); /* For Safari */
+  background: -o-linear-gradient(#207E62, #006D4C); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#207E62, #006D4C); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#207E62, #006D4C); /* Standard syntax */
   background: #207E62;
   border-top: 0px;
   width: 900px;
-  height: 600px;
   margin: auto;
 }
 
+
 /*=== HEADER ====*/
 header {
-  background: #00A876;
+  background: -webkit-linear-gradient(#207E62, #006D4C); /* For Safari */
+  background: -o-linear-gradient(#207E62, #006D4C); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#207E62, #006D4C); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#207E62, #006D4C); 
   border-left: 0px;
   border-right: 0px;
   font-size: 20px;
@@ -118,23 +125,44 @@ header {
 
 /*=== PROJECTS ====*/
 .projects_section {
-  background: #006D4C;
   padding: 10px 0px;
+  width: 900px;
+  margin: auto;
 }
 
 .projects_section > a {
 /*  background: blue;*/
-  height: 230px;
-  width: 40px;
+  margin-top: 25px;
+  width:40px;
+  height:220px;
 }
 
-.projects_section > .prev {
+.projects_section .arrow {
+  padding: 100px 20px 100px 10px;
+  font-size: 28px;
+  display:none; 
 }
 
-.projects_section > .next {
+.projects_section > .prev:hover {  
+}
+
+.projects_section > .prev:hover .arrow {
+  border: 1px solid #0FF0AD;
+  display:block;
+}
+
+.projects_section > .next:hover .arrow {
+  border: 1px solid #0FF0AD;
+  display:block;
 }
 
 .projects_section > nav.projects-navigation {
+  width: 900px;
+  margin: auto;
+  padding-top: 8px;
+  margin-top: -10px;
+  background: #006D4C;
+  
 }
 
 .projects-navigation {
@@ -164,13 +192,31 @@ a.project3 {
 
 .project {
   background: white;
-  padding: 20px 60px;
+  position: absolute;
+  left: 50%;
+  margin-left: -350px;
+  margin-top: 10px;
+  width:700px;
+/*  border:1px solid black;*/
+/*  -webkit-backface-visibility: hidden;*/
 }
 
 .project-image {
-  float: left;
+  width: 100px;
 }
 
 .project-descriptions {
   font-size: 20px;
+  width: 600px;
+}
+
+footer {
+  background: #006D4C;
+  height:10px;
+  width:900px;
+  margin:auto;
+  position:fixed;
+  bottom:0px;
+  left: 50%;
+  margin-left: -450px;
 }
