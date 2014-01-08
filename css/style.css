@@ -1,4 +1,5 @@
-html, body, div, img, nav, main {
+/*=== RESETS ====*/
+html, body, div, img, nav, section, footer {
   margin: 0;
   padding: 0;
   border: 0;
@@ -23,8 +24,9 @@ a:visited {
 a:hover {
   color: #0FF0AD;
 }
+
 /*=== UTILITIES ====*/
-.group:after {
+.clearfix:after {
   content: "";
   display: block;
   clear: both;
@@ -42,141 +44,147 @@ a:hover {
   display: none;
 }
 
-.selected {
-  background: #FF9840 !important;
+a.selected {
+  background: #eee !important;
   color: #1D7074;
 }
 
+.selected {
+  color: #1D7074;
+}
+
+
 /*=== BODY ====*/
 body {
-  background: #FF9840;
-  font-family: courier;
+  background: #eee;
+  font-family: 'Josefin Sans', sans-serif;
   color: #35D4A4;
 }
-
-main {
-  background: -webkit-linear-gradient(#207E62, #006D4C); /* For Safari */
-  background: -o-linear-gradient(#207E62, #006D4C); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#207E62, #006D4C); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#207E62, #006D4C); /* Standard syntax */
-  background: #207E62;
-  border-top: 0px;
-  width: 900px;
-  margin: auto;
-}
-
 
 /*=== HEADER ====*/
 header {
   background: -webkit-linear-gradient(#207E62, #006D4C); /* For Safari */
   background: -o-linear-gradient(#207E62, #006D4C); /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(#207E62, #006D4C); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#207E62, #006D4C); 
+  background: linear-gradient(#207E62, #006D4C);
+  background: #ccc; 
   border-left: 0px;
   border-right: 0px;
-  font-size: 20px;
-  padding: 15px 0px 20px 0px;
+  font-size: 16px;
+  font-family:sans-serif;
+  font-weight: 800px;
+  color: #eee;
+  padding: 5px 0px 10px 0px;
   
 }
 
-.header_nav {
+header > nav.header-nav {
   width: 900px;
   margin: auto;
   padding-top: 10px;
 }
 
-.header_nav > .float-right {
+.header-nav > .float-right {
   padding-left: 15px;
 }
 
-.header_nav > #my_email {
+.header-nav > #email {
   display: inline;
   padding-left: 40px;
 }
 
-.header_nav > #my_resume {
+.header-nav > #resume {
   padding-right: 40px;
 }
 
-.header_nav > #my_github {
+.header-nav > #github {
 }
 
+
+/*=== MAIN ====*/
+section.main {
+  background: -webkit-linear-gradient(#207E62, #006D4C); /* For Safari */
+  background: -o-linear-gradient(#207E62, #006D4C); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#207E62, #006D4C); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#207E62, #006D4C); /* Standard syntax */
+  background: #e6e6e6;
+  border-top: 0px;
+  width: 900px;
+  margin: auto;
+}
+
+
 /*=== DESCRIPTION ====*/
-.description_sections {
+.description {
   padding: 50px 40px;
   font-size: 30px;
 }
 
-.description_sections > img{
+.description > #picture{
   width: 150px;
   margin: 0px 10px 0px 0px;
   border-radius: 20px;
 }
 
-.description_sections > #my_name {
+.description > #name {
   margin-bottom: 40px;
   margin-left: 300px;
   margin-top: 20px;
+  font-weight: 700;
 }
 
-.description_sections > #description {
-  
+.description > #biography {
 }
 
 /*=== PROJECTS ====*/
-.projects_section {
+.projects {
   padding: 10px 0px;
   width: 900px;
   margin: auto;
 }
 
-.projects_section > a {
-/*  background: blue;*/
+.projects > a {
   margin-top: 25px;
   width:40px;
   height:220px;
 }
 
-.projects_section .arrow {
+.projects .arrow {
   padding: 100px 20px 100px 10px;
   font-size: 28px;
-  display:none; 
+  display:block; 
 }
 
-.projects_section > .prev:hover {  
+.projects > .prev:hover {  
 }
 
-.projects_section > .prev:hover .arrow {
-  border: 1px solid #0FF0AD;
+.projects > .prev:hover .arrow, 
+.projects > .next:hover .arrow {
+  background: #0FF0AD;
+  color: #ccc;
   display:block;
 }
 
-.projects_section > .next:hover .arrow {
-  border: 1px solid #0FF0AD;
-  display:block;
-}
-
-.projects_section > nav.projects-navigation {
+.projects > nav.projects-nav {
+  background: #ddd;
   width: 900px;
   margin: auto;
   padding-top: 8px;
-  margin-top: -10px;
-  background: #006D4C;
-  
+  margin-top: -10px;  
 }
 
-.projects-navigation {
+.projects-nav {
   font-size: 14px;
   padding-bottom: 5px;
 }
 
-.projects-navigation .title {
+.projects-nav .title {
   display:inline;
   padding: 0px 100px 0px 40px;
   font-size: 20px;
 }
-.projects-navigation > a {
-  background: #BF7230;
+.projects-nav > a {
+/*  background: #BF7230;*/
   padding: 8px 10px 6px 10px;
   margin: 0px 20px;
 }
@@ -191,14 +199,11 @@ a.project3 {
 }
 
 .project {
-  background: white;
   position: absolute;
   left: 50%;
   margin-left: -350px;
   margin-top: 10px;
   width:700px;
-/*  border:1px solid black;*/
-/*  -webkit-backface-visibility: hidden;*/
 }
 
 .project-image {
@@ -211,12 +216,12 @@ a.project3 {
 }
 
 footer {
-  background: #006D4C;
+  background: #ddd;
   height:10px;
   width:900px;
   margin:auto;
-  position:fixed;
   bottom:0px;
-  left: 50%;
-  margin-left: -450px;
+/*  left: 50%;*/
+/*  position:fixed;*/
+/*  margin-left: -450px;*/
 }
