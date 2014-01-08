@@ -1,15 +1,13 @@
 $(document).ready(function() {
+    $('#picture').mouseover( function () {
+        console.log($(this).attr("src"))
+        $(this).css({"color": "lightblue"})
+
+    });
     
-    // 
-    // $('#name').mouseover( function () {
-    //   console.log($(this).css("color"))
-    //   if(  $(this).css("color") == "rgb(53, 212, 164)"){
-    //     $(this).css({"color": "rgb(15, 240, 173)"})
-    //   } else {
-    //     $(this).css({"color": "rgb(53, 212, 164)"})
-    //   }
-    // });
-    
+    $('#picture').mouseleave( function () {
+        $(this).css({"color": "rgb(53, 212, 164)"})
+    });
     
     $('.alternate-color').mouseover( function () {
         $(this).css({"color": "lightblue"})
