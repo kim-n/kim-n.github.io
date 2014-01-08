@@ -1,6 +1,27 @@
 $(document).ready(function() {
-    $(".projects-nav a").on("click", function(event) {
+    
+    // 
+    // $('#name').mouseover( function () {
+    //   console.log($(this).css("color"))
+    //   if(  $(this).css("color") == "rgb(53, 212, 164)"){
+    //     $(this).css({"color": "rgb(15, 240, 173)"})
+    //   } else {
+    //     $(this).css({"color": "rgb(53, 212, 164)"})
+    //   }
+    // });
+    
+    
+    $('.alternate-color').mouseover( function () {
+        $(this).css({"color": "lightblue"})
 
+    });
+    
+    $('.alternate-color').mouseleave( function () {
+        $(this).css({"color": "rgb(53, 212, 164)"})
+    });
+    
+    
+    $(".projects-nav a").on("click", function(event) {
         event.preventDefault()
         var clicked_project = $("." + $(this)[0].className)
         next_project_id = $(this)[0].id
