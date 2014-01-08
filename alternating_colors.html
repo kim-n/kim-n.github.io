@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+      <style type='text/css'>
+
+      .fun-square {
+        z-index: 1;
+        float:left;
+        margin-left: 70px;
+        background: lightblue;
+        padding: 30px 50px;
+        font-size: 50px;
+        opacity: 0.25;
+        color: lightblue;
+      }
+
+      </style>
+      
+      <title>ALEX</title>
+    
+  </head>
+  <body>
+    <div class="fun-square">A</div>
+    <div class="fun-square">L</div>
+    <div class="fun-square">E</div>
+    <div class="fun-square">X</div>
+  </body>
+</html>
+
+
+<script>
+$(document).ready(function() {
+  
+  $('.fun-square').mouseover( function () {
+    console.log($(this).css("background-color"))
+    if(  $(this).css("background-color") == "rgb(173, 216, 230)" ){
+      $(this).css({"background-color": "red"})
+    } else {
+      $(this).css({"background-color": "lightblue"})
+    }
+  });
+
+  
+})
+
+</script>
+
+
