@@ -73,31 +73,43 @@ header {
   font-size: 16px;
   font-family:sans-serif;
   font-weight: 800px;
-  color: #eee;
-  padding: 5px 0px 10px 0px;
-  
+  color: #eee;  
 }
 
 header > nav.header-nav {
   width: 900px;
   margin: auto;
-  padding-top: 10px;
 }
 
 .header-nav > .float-right {
-  padding-left: 15px;
+}
+
+.header-nav > div {
+  padding: 10px 0px;
 }
 
 .header-nav > #email {
-  display: inline;
   padding-left: 40px;
 }
 
-.header-nav > #resume {
-  padding-right: 40px;
+.header-nav a {
+  padding: 10px 20px; 
+  border-left: 1px solid #eee;  
 }
 
-.header-nav > #github {
+.header-nav > #github,
+.header-nav > #resume {
+  
+}
+
+.header-nav > #resume > a{
+  border-right: 1px solid #eee;  
+}
+
+#resume > a:hover, 
+#github > a:hover {
+  background: #0FF0AD;
+  color: #eee;
 }
 
 
@@ -162,7 +174,6 @@ section.main {
 .projects > .next:hover .arrow {
   background: #0FF0AD;
   color: #ccc;
-  display:block;
 }
 
 .projects > nav.projects-nav {
@@ -184,7 +195,6 @@ section.main {
   font-size: 20px;
 }
 .projects-nav > a {
-/*  background: #BF7230;*/
   padding: 8px 10px 6px 10px;
   margin: 0px 20px;
 }
@@ -202,7 +212,7 @@ a.project3 {
   position: absolute;
   left: 50%;
   margin-left: -350px;
-  margin-top: 10px;
+  margin-top: 50px;
   width:700px;
 }
 
@@ -212,7 +222,8 @@ a.project3 {
 
 .project-descriptions {
   font-size: 20px;
-  width: 600px;
+  width: 570px;
+  margin-left: 30px;
 }
 
 footer {
@@ -221,7 +232,4 @@ footer {
   width:900px;
   margin:auto;
   bottom:0px;
-/*  left: 50%;*/
-/*  position:fixed;*/
-/*  margin-left: -450px;*/
 }
