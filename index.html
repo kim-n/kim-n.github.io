@@ -1,71 +1,80 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <link rel="shortcut icon" href="images/favicon.ico" />
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  <!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'> -->
-  <link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:700&text=Kimberly%20NARINE' rel='stylesheet' type='text/css'>
+  <head>
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'> -->
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:700&text=Kimberly%20NARINE' rel='stylesheet' type='text/css'>
   
-  <link rel="stylesheet" href="css/style.css">
-  <script type="text/javascript" src="js/script.js"></script>
-  <title>Kimberly Narine</title>
-</head>
-<body>
-  <header>
-    <nav class="header-nav clearfix">
-      <div class="float-right" id="resume"><a href="documents/resume.pdf">Resume</a></div>
-      <div class="float-right" id="github">
-        <a href="https://github.com/kim-n?tab=repositories">Github</a>
-      </div>
-      <div id="email">kimberlyonarine@gmail.com</div>
-      
-    </nav>
-  </header>
-  <section class="main">
-    <section class="description">
-      <img id="picture" class="float-left" src="">
-      <div id="name">Kimberly NARINE</div>
-      <div id="biography">
-        I am a software developer located in Brooklyn, NY. I write software in  <span class="alternate-color">Ruby</span>,  <span class="alternate-color">Javascript</span> and  <span class="alternate-color">C++</span>. I graduated from <span class="alternate-color">Macaulay Honors College</span> at Hunter College with a B.A. in Mathematics and Computer Science. 
-      </div>
-    </section>
-    </section>
-    <article class="projects clearfix">
-      <a class="prev float-left" href=""><div class="arrow"><</div></a>
-      <a class="next float-right" href=""><div class="arrow">></div></a>
-      <nav class="projects-nav">
-        <div class="title">Projects</div>
-        <a id="1" class="project1 selected" href="">Greatreads</a>
-        <a id="2" class="project2" href="">Asteroids</a>
-        <a id="3" class="project3" href="">ActiveRecord Lite</a>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/script.js"></script>
+    <title>Kimberly Narine</title>
+  </head>
+  <body>
+    <header>
+      <nav class="main-navigation">
+        <a href="#about">about</a>
+        <a href="#projects">projects</a>
+        <a href="#contact">contact</a>
       </nav>
-      <div class="project project1 selected clearfix">
-        <a href="https://github.com/kim-n/goodReadsClone">
-          <img class="project-image float-left" src="images/github_icon.png">
-        </a>
-        <div class="project-descriptions float-right">
-          <a href="http://greatreads.knarine.com/" style="color:#35D4A4">LINK!</a>
-          <br>
-          Book reviewing Ruby on Rails web application. AJAX reviewing, liking and commenting using jQuery UJS. Interfaces with Goodreads API.  Integrates SendGrid for application email delivery.</div>
-      </div>
-      <div class="project project2 hidden clearfix">
-        <a href="https://github.com/kim-n/Asteroids">
-          <img class="project-image float-left" src="images/github_icon.png">
-        </a>
-        <div class="project-descriptions float-right">Javascript implementation of classic arcade game, Asteroids. Game drawn on HTML5 canvas-element. Javascript event listners take in keyboard input as game controls.</div>
-      </div>
-      <div class="project project3 hidden clearfix">
-        <a href="https://github.com/kim-n/Active-Record-Lite">
-          <img class="project-image float-left" src="images/github_icon.png">
-        </a>
-        <div class="project-descriptions float-right">Clone basic features of Active Record. Reconstruct mass assignment, abstracts away database querying and builds class associations.</div>
-      </div>
-    </article>
-    
-  <footer></footer>
-</body>
+    </header>
+    <section class="main">
+      <article class="about">
+        <a id="about"></a>
+        <img id="picture" class="float-left" src="">
+        <div id="name">Kimberly NARINE</div>
+        <p id="biography">
+          I am a software developer located in Brooklyn, NY. I write software in
+          <span class="">Ruby</span>,  
+          <span class="">Javascript</span> and  
+          <span class="">C++</span>. 
+          I graduated from 
+          <span class="">Macaulay Honors College</span>
+          at Hunter College with a B.A. in Mathematics and Computer Science. 
+        </p>
+      </article>
+      <article class="projects">
+        <a id="projects"></a>
+        <div class="project">
+          <a href="https://github.com/kim-n/goodReadsClone">
+            <img class="project-image" src="images/github_icon.png">
+          </a>
+          <p class="project-descriptions">
+            <a href="http://greatreads.knarine.com/" style="color:#35D4A4">LINK!</a>
+            <br>
+            Book reviewing Ruby on Rails web application.
+            AJAX reviewing, liking and commenting using jQuery UJS. Interfaces with Goodreads API.  
+            Integrates SendGrid for application email delivery.
+          </p>
+        </div>
+        <div class="project">
+          <a href="https://github.com/kim-n/Asteroids">
+            <img class="project-image" src="images/github_icon.png">
+          </a>
+          <p class="project-descriptions">
+            Javascript implementation of classic arcade game, Asteroids.
+            Game drawn on HTML5 canvas-element. Javascript event listners take in keyboard input as game controls.
+          </p>
+        </div>
+        <div class="project">
+          <a href="https://github.com/kim-n/Active-Record-Lite">
+            <img class="project-image" src="images/github_icon.png">
+          </a>
+          <p class="project-descriptions">
+            Clone basic features of Active Record. 
+            Reconstruct mass assignment, abstracts away database querying and builds class associations.
+          </p>
+        </div>
+      </article>
+      <article class="contact">
+        <a id="contact"></a>
+        
+      </article>
+    </section>
+    <footer></footer>
+  </body>
   
 </html>
