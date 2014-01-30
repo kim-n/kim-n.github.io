@@ -106,20 +106,27 @@ header {
 }
 
 .main-navigation {
-  margin: auto;
+  position: fixed;
+  background: black;
+  left:50%;
+  margin-left: -450px;
   width: 900px;
 }
 
-.main-navigation a{
+.main-navigation .nav-about,
+.main-navigation .nav-projects,
+.main-navigation .nav-contact{
   font-size: 24px;
   float: right;
   padding: 0px 20px;
 }
 
-.main-navigation > p{
+.main-navigation .title{
   font-family: 'Montserrat Alternates', sans-serif;
   font-size: 20px;
   line-height: 1.25;
+  float: left;
+  letter-spacing: 7px;
 }
 
 /*=== MAIN ====*/
@@ -143,8 +150,12 @@ img {
 .contact {
   width: 780px;
   margin: auto;
-  padding: 40px 60px;
+  padding: 60px 60px;
   border-right: 10px;
+}
+
+.projects{
+  padding-top: 20px;
 }
 /*___ ABOUT ___*/
 .about {
@@ -162,16 +173,31 @@ img {
 }
 
 .project {
-  
+  margin-top: 60px;
+  text-align: justify;
+}
+
+.project-title {
+  text-align: center;
+  border-top: 1px dashed black;
+  width: 200px;
+  margin: auto;
 }
 
 .project-image {
-  
+  float:left;
+  margin-right: 20px;
+  margin-bottom: 20px;
 }
 
 .project-descriptions {
-  
+  display: inline;
 }
 /*___ CONTACT ___*/
 .contact {
+  text-align: justify;
+}
+
+.contact a {
+  padding: 0px 50px;
 }

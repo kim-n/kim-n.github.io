@@ -1,3 +1,46 @@
+// $(function() {
+   //  $(window).on("scroll", function(e){
+//         $aboutDIV = $(".about")
+//         $projectsDIV = $(".projects")
+//         $contactDIV = $(".contact")
+//         
+//         var scrollTop = $(this).scrollTop();
+//         var aboutText = "KIMBERLY NARINE";
+//         var projectsText = "PROJECTS"
+//         var contactText = "CONTACT"
+//         
+//         console.log()
+//         
+//         if(scrollTop > $aboutDIV.offset().top && scrollTop < $projectsDIV.offset().top){
+//             $(".nav-about").css("float", "right");
+//             $(".nav-projects").css("float", "right");
+//         } 
+//         else if (scrollTop > $projectsDIV.offset().top && scrollTop < $contactDIV.offset().top){
+//             console.log("PROJECT")
+//             $(".nav-about").css("float", "left");
+//             $(".nav-projects").css("float", "right");
+//             $(".nav-contact").css("float", "right");
+//             
+//             // $(".nav-contact").css("float", "left");
+//             // $(".nav-contact").css("margin-right", "0px");
+//             // 
+//             // $(".nav-projects").css("margin-right", ($(this).scrollTop() - 336) + "px");
+//         } 
+//         else if (scrollTop > $contactDIV.offset().top && scrollTop < $("body").height() ) {
+//             console.log("CONTACT")
+//             $(".nav-projects").css("float", "left");
+//             $(".nav-contact").css("float", "right");
+//         }
+//         // console.log($(this).scrollTop())
+//         //240
+//         //1000
+//         // $title = $(".main-navigation > .title")
+//         // console.log($title.text($title.text().slice(0, -1)))
+//     })
+// 
+// });
+
+
 // $(document).ready(function() {
 //     $('#picture').mouseover( function () {
 //         console.log($(this).attr("src"))
