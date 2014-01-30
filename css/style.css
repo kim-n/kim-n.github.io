@@ -50,6 +50,7 @@ a:hover {
 
 body {
   font-size: 18px;
+  font-family: 'Montserrat Alternates', sans-serif;
 }
 
 .float-right {
@@ -62,24 +63,41 @@ body {
 
 /*=== COLORS ====*/
 body {
-  background: #D4E1E7; /* Old browsers */
+  background: black; /* Old browsers */
+  }
+
+header {
+  background: black;
+  color: #DF5847;
+  font-family: 'Hammersmith One', sans-serif;
+}
+
+.main-navigation > .nav-about{
+  color: #FFB39B;
+}
+
+.main-navigation > .nav-projects{
+  color: #E8CD81;
+}
+
+.main-navigation > .nav-contact{
+  color: #CAFF8E;
+}
+
+.main-navigation > p{
   color: white;
 }
 
-header {
-  background: #DE5847;
-}
-
 .about {
-  background: #6CCAD2;
+  background: #FFB39B;
 }
 
 .projects {
-  background: #2891BF;
+  background: #E8CD81;
 }
 
 .contact {
-  background: #0266A4;
+  background: #CAFF8E;
 }
 
 /*=== HEADER ====*/
@@ -98,7 +116,19 @@ header {
   padding: 0px 20px;
 }
 
+.main-navigation > p{
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 20px;
+  line-height: 1.25;
+}
+
 /*=== MAIN ====*/
+
+.main {
+	line-height: 2;
+  
+}
+
 img {
   width: 100px;
 }
