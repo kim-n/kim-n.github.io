@@ -29,12 +29,12 @@ body {
 }
 
 a {
-  color:inherit;
+  color: #0FF0AD;
   text-decoration: none; 
 }
 
 a:visited {
-  color:inherit;
+  color: #00CC99;
 }
 
 a:hover {
@@ -149,7 +149,7 @@ header {
 }
 
 img {
-  width: 100px;
+  width: 120px;
 }
 
 header, .seperator {
@@ -227,8 +227,19 @@ footer .inner{
 .project-title {
   text-align: center;
   border-top: 1px dotted white;
-  width: 200px;
+  width: 720px;
   margin: auto;
+}
+
+.project-name {
+  margin-right: 10px;
+  letter-spacing: 2px;
+  
+}
+
+.project-github {
+  margin-left: 10px;
+  float:left;
 }
 
 .project-image {
