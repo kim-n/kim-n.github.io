@@ -70,75 +70,15 @@ body .title{
   color: #00CCFF;
   text-align: center;
   font-size: 28px;
-  padding: 60px 0px;
+  padding: 70px 0px;
   border: 1px dotted #00CCFF;
   border-top: none;
   border-bottom: none;
   width: 900px;
   margin: auto;
 }
-/*body .title{
-  font-family: 'Montserrat Alternates', sans-serif;
-  font-size: 20px;
-  line-height: 1.25;
-  float: left;
-  letter-spacing: 7px;
-}
-*/
-
-header {
-  background: white;
-/*  font-family: 'Hammersmith One', sans-serif;*/
-}
-
-.main-navigation > .nav-about{
-  color: #FFB39B;
-}
-
-.main-navigation > .nav-projects{
-  color: #E8CD81;
-}
-
-.main-navigation > .nav-contact{
-  color: #CAFF8E;
-}
-
-.main-navigation > p{
-  color: white;
-}
 
 /*=== HEADER ====*/
-header {
-  height: 20px;
-}
-
-.main-navigation {
-  position: fixed;
-  right: 189px;
-  margin-left: -450px;
-  
-/*  position: fixed;
-  background: white;
-  left:50%;
-  margin-left: -450px;
-  width: 900px;
-  border: 1px dotted #00CCFF;
-  border-right: none;
-  border-left: none;
-  height: 20px;*/
-}
-
-.main-navigation .nav-about,
-.main-navigation .nav-projects,
-.main-navigation .nav-contact{
-  font-size: 20px;
-/*  color: #66FFCC;*/
-/*  background: green;*/
-/*  float: right;*/
-  color: rgba(0, 0, 0, 0.1);
-  padding: 0px 20px;
-/*  height: 20px;*/
-}
 
 
 /*=== MAIN ====*/
@@ -152,7 +92,7 @@ img {
   width: 120px;
 }
 
-header, .seperator {
+.seperator {
   height: 30px;
 /*background-color:rgba(255,0,0,0);*/
   border: 1px dotted #00CCFF;
@@ -172,8 +112,29 @@ header, .seperator {
   letter-spacing: 10px;
 }
 
+.main-navigation,
 footer .inner{
-  height: 200px;
+  height: 20px;
+  background: #00CC99;
+  color: white;
+  text-align: center;
+}
+
+.main-navigation a {
+  padding: 0px 15px; 
+  letter-spacing: 2px;
+  color: white;
+}
+
+.main-navigation a,
+footer .end{
+  width: 900px;
+  margin: auto;
+  font-size: 16px;
+  text-align: center;
+}
+
+footer .inner{
   border: 1px dotted #00CCFF;
   border-top: none;
   border-bottom: none;
